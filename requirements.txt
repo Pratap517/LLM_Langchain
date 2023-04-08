@@ -2,3 +2,4 @@ openai
 langchain
 unstructured
 tiktoken
+pandas
