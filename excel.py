@@ -33,8 +33,13 @@ def main():
             st.error(f"An error occurred: {e}")
 
         st.write("Data:")
-        data = df[:10]
+        data = df.head()
         st.dataframe(data)
+        
+        st.markdown(
+            "Don't have an API key? Get one from [OpenAI](https://platform.openai.com/account/api-keys)"
+        )
+        
 
         openai_api_key = st.text_input("Enter your OpenAI API key", type="password")
         user_input = st.text_input("Ask a question about your data")
@@ -42,6 +47,9 @@ def main():
         if user_input and openai_api_key:
             x = process_uploaded_file(df, openai_api_key, user_input)
             st.write(x)
+            st.markdown(
+            "Connect with me on [LinkedIn](https://www.linkedin.com/in/prathapreddyk/)"
+        )
 
 
 if __name__ == "__main__":
