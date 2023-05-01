@@ -33,7 +33,7 @@ def main():
             st.error(f"An error occurred: {e}")
 
         st.write("Data:")
-        data = df.head()
+        data = df.head(10)
         st.dataframe(data)
         
         st.markdown(
