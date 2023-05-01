@@ -11,7 +11,7 @@ def process_uploaded_file(data, openai_api_key, user_input):
     if user_input:
         st.write(f"You entered: {user_input}")
 
-    agent = create_pandas_dataframe_agent(OpenAI(temperature=1.5), data, verbose=False)
+    agent = create_pandas_dataframe_agent(OpenAI(temperature=0.5), data, verbose=False)
     x = agent.run(user_input)
     return x
 
