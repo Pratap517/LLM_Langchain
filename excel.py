@@ -17,7 +17,7 @@ def process_uploaded_file(data, openai_api_key, user_input):
 
 
 def main():
-    st.header("🦜🔗Talk to your excel or csv files")
+    st.header("🦜🔗 Excel GPT")
 
     uploaded_file = st.file_uploader("Choose a file (CSV or Excel)", type=['csv', 'xlsx'])
 
