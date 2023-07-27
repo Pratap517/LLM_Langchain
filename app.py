@@ -13,7 +13,7 @@ from langchain.schema import SystemMessage
 from langchain.agents import OpenAIFunctionsAgent
 
 st.set_page_config(layout="centered", page_title="AIJOBS")
-st.title("GPT- Job Assistant")
+st.title("GPT Job Assistant")
 system_message = SystemMessage(
     content="You are very custom designed helpful assistant in finding relevent jobs, you can use the tools when needed, tone should be friendly, and don't use the tools if the query is not related to jobs or carrer related info, please remember you should not answer if the query is not relevent to jobs or carrer related information"
 )
