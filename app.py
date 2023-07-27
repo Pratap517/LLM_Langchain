@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 import streamlit as st
 import requests
 from typing import List, Dict
@@ -20,7 +19,6 @@ system_message = SystemMessage(
 )
 prompt = OpenAIFunctionsAgent.create_prompt(system_message=system_message)
 
-load_dotenv()
 
 
 def custom_tool(query: str) -> List[Dict[str, str]]:
